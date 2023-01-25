@@ -1,9 +1,9 @@
 {
-    "Identifier": "",
-    "Slug": "",
-    "Status": "",
-    "Title": "",
-    "Description": "",
+    "Identifier": "eos4cxk",
+    "Slug": "sars-cov-2-antiviral-screen",
+    "Status": "In progress",
+    "Title": "SARS-CoV-2 Anti viral screening",
+    "Description": "Representation Learning Framework that utilizes molecule images for encoding molecular inputs as machine readable vectors for downstream tasks such as bio-activity prediction, drug metabolism analysis, or drug toxicity prediction. The approach utilizes transfer learning, that is, pre-training the model on massive unlabeled datasets to help it in generalizing feature extraction and then fine tuning on specific tasks. This model will be fine tuned on 13 assays concerned with a number of target categories ranging from viral entry to toxicity in humans. These interactions are formulated as binary classification tasks",
     "Mode": "",
     "Task": [],
     "Input": [],
@@ -12,8 +12,11 @@
     "Output Type": [],
     "Output Shape": "",
     "Interpretation": "",
-    "Tag": [],
-    "Publication": "",
-    "Source Code": "",
-    "License": ""
+    "Tag": [
+        "SarsCov2",
+        "classification"
+    ],
+    "Publication": "https://www.nature.com/articles/s42256-022-00557-6",
+    "Source Code": "https://github.com/HongxinXiang/ImageMol",
+    "License": "MIT License"
 }
