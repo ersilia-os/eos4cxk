@@ -1,1 +1,14 @@
 mock.csv filter=lfs diff=lfs merge=lfs -text
+model/checkpoints/MERS_PPE.pth filter=lfs diff=lfs merge=lfs -text
+model/checkpoints/ACE2.pth filter=lfs diff=lfs merge=lfs -text
+model/checkpoints/AlphaLISA.pth filter=lfs diff=lfs merge=lfs -text
+model/checkpoints/CoV2_CPE.pth filter=lfs diff=lfs merge=lfs -text
+model/checkpoints/HEK293.pth filter=lfs diff=lfs merge=lfs -text
+model/checkpoints/Human.pth filter=lfs diff=lfs merge=lfs -text
+model/checkpoints/TMPRSS2.pth filter=lfs diff=lfs merge=lfs -text
+model/checkpoints/TruHit.pth filter=lfs diff=lfs merge=lfs -text
+model/checkpoints/3CL.pth filter=lfs diff=lfs merge=lfs -text
+model/checkpoints/CoV2_Cytotox.pth filter=lfs diff=lfs merge=lfs -text
+model/checkpoints/CoV_PPE_cs.pth filter=lfs diff=lfs merge=lfs -text
+model/checkpoints/CoV_PPE.pth filter=lfs diff=lfs merge=lfs -text
+model/checkpoints/MERS_PPE_cs.pth filter=lfs diff=lfs merge=lfs -text
