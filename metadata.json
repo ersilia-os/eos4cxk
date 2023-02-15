@@ -13,8 +13,8 @@
     "Output Shape": "List",
     "Interpretation": "The output is comprised of binary classification across thirteen assays that are as follows: 3C-like enzymatic activity (3CL), ACE2 enzymatic activity (ACE2), Human Embryonic Kidney 293 Cell line toxicity (HEK293), Human fibroblast toxicity (Human), MERS Pseudotyped particle entry (MERS_PPE), MERS Pseudotyped particle entry counterscreen (MERS_PPE_cs), SarsCov Pseudotyped particle entry (Cov_PPE), SarsCov Pseudotyped particle entry counterscreen (Cov_PPE_cs), SarsCov2 cytopathic effect (COV2_CPE), SarsCov2 cytopathic effect counterscreen (COV2_Cytotox), Spike ACE2 Protein-protein interaction (AlphaLISA), Spike ACE2 Protein-protein interaction counterscreen (TruHit), Transmembrane protease serine 2 enzymatic activity (TMPRSS2)",
     "Tag": [
-        "SarsCov2",
-        "classification"
+        "Sars-CoV-2",
+        "Antiviral activity"
     ],
     "Publication": "https://www.nature.com/articles/s42256-022-00557-6",
     "Source Code": "https://github.com/HongxinXiang/ImageMol",
