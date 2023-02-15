@@ -148,7 +148,7 @@ class Artifact(BentoServiceArtifact):
 @artifacts([Artifact("model")])
 class Service(BentoService):
     @api(input=JsonInput(), batch=True)
-    def run(self, input: List[JsonSerializable]):
+    def predict(self, input: List[JsonSerializable]):
         input = input[0]
         input_list = [inp["input"] for inp in input]
         output = self.artifacts.model.run(input_list)
