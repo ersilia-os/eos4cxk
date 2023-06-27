@@ -23,6 +23,10 @@ ImageMol is a Representation Learning Framework that utilizes molecule images fo
 * [Source Code](https://github.com/HongxinXiang/ImageMol)
 * Ersilia contributor: [DhanshreeA](https://github.com/DhanshreeA)
 
+## Ersilia model URLs
+* [GitHub](https://github.com/ersilia-os/eos4cxk)
+* [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4cxk.zip)
+
 ## Citation
 
 If you use this model, please cite the [original authors](https://www.nature.com/articles/s42256-022-00557-6) of the model and the [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).
