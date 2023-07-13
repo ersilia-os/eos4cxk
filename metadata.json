@@ -27,5 +27,9 @@
     "Publication": "https://www.nature.com/articles/s42256-022-00557-6",
     "Source Code": "https://github.com/HongxinXiang/ImageMol",
     "License": "MIT",
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4cxk.zip"
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4cxk.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos4cxk",
+    "Docker Architecture": [
+        "AMD64"
+    ]
 }
