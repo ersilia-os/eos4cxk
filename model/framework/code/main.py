@@ -53,8 +53,8 @@ def get_predictions(smiles):
             with torch.no_grad():
                 prob = torch.sigmoid(assay_mdl(img_tensor))
                 pred = 1 if prob > 0.5 else 0 # Threshold as per original model
-            per_row_preds.append(pred)
-        outputs.append(per_row_preds)
+            per_row_prob.append(prob)
+        outputs.append(per_row_prob)
         os.remove(path)
     return outputs
 
@@ -66,7 +66,7 @@ with open(input_file, "r") as f:
 
 # run _model
 outputs = get_predictions(smiles_list)
-
+cols = [assay.lower() for assay in sarscov2_assays]
 # write output in a .csv file
 with open(output_file, "w") as f:
     writer = csv.writer(f)
