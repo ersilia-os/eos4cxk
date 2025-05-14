@@ -1,14 +1,15 @@
 name,type,direction,description
-cov2_cytotox,float,high,probability of cytotoxicity as counterscreen for cov2-cpe
-tmprss2,float,high,probability of inhibiting the transmembrane protease serine 2 enzymatic activity
-mers_ppe_cs,float,high,counterscreen for the mers_ppe
-human,float,high,probability of cytotoxicity in human fibroblasts
-alphalisa,float,high,probability of inhibiting the spike-ace2 interaction
 3cl,float,high,probability of inhibiting the 3CL protease
 ace2,float,high,probability of inhibiting the ACE2 enzyme
-hek293,float,high,probability of cytotoxicity in hek293 cells
-cov_ppe,float,high,probability of inhibiting the viral entrance with CoV1 pseudoparticles
+alphalisa,float,high,probability of inhibiting the spike-ace2 interaction
 cov2_cpe,float,high,probability of cytopathic effect
-truhit,float,high,counterscreen for the alphalisa assay
+cov2_cytotox,float,high,probability of cytotoxicity as counterscreen for cov2-cpe
+cov_ppe,float,high,probability of inhibiting the viral entrance with CoV1 pseudoparticles
 cov_ppe_cs,float,high,counterscreen for the cov_ppe
+hek293,float,high,probability of cytotoxicity in hek293 cells
+human,float,high,probability of cytotoxicity in human fibroblasts
 mers_ppe,float,high,probability of inhibiting the viral entrance in MERS pseudoparticles
+mers_ppe_cs,float,high,counterscreen for the mers_ppe
+tmprss2,float,high,probability of inhibiting the transmembrane protease serine 2 enzymatic activity
+truhit,float,high,counterscreen for the alphalisa assay
+

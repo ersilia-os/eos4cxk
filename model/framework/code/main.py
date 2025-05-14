@@ -18,7 +18,7 @@ output_file = sys.argv[2]
 # current file directory
 root = os.path.dirname(os.path.abspath(__file__))
 checkpoints_dir = os.path.abspath(os.path.join(root, "..", "..", "checkpoints"))
-ckpts = glob.glob(f"{checkpoints_dir}/*.pth")
+ckpts = sorted(glob.glob(f"{checkpoints_dir}/*.pth"))
 sarscov2_assays = [os.path.split(pt)[-1].split(".")[0] for pt in ckpts]
 
 # Load Sars-Cov2 models
@@ -53,8 +53,8 @@ def get_predictions(smiles):
             with torch.no_grad():
                 prob = torch.sigmoid(assay_mdl(img_tensor))
                 pred = 1 if prob > 0.5 else 0 # Threshold as per original model
-            per_row_prob.append(prob)
-        outputs.append(per_row_prob)
+            per_row_preds.append(pred)
+        outputs.append(per_row_preds)
         os.remove(path)
     return outputs
 
@@ -66,10 +66,12 @@ with open(input_file, "r") as f:
 
 # run _model
 outputs = get_predictions(smiles_list)
+print(outputs)
 cols = [assay.lower() for assay in sarscov2_assays]
+print(cols)
 # write output in a .csv file
 with open(output_file, "w") as f:
     writer = csv.writer(f)
-    writer.writerow(sarscov2_assays)  # header
+    writer.writerow(cols)  # header
     for o in outputs:
         writer.writerow(o)
