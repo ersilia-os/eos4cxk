@@ -43,5 +43,7 @@
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos4cxk",
     "Docker Architecture": [
         "AMD64"
-    ]
+    ],
+    "Model Size": 556.0,
+    "Environment Size": 8401.0
 }
