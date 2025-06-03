@@ -12,4 +12,3 @@ mers_ppe,float,high,probability of inhibiting the viral entrance in MERS pseudop
 mers_ppe_cs,float,high,counterscreen for the mers_ppe
 tmprss2,float,high,probability of inhibiting the transmembrane protease serine 2 enzymatic activity
 truhit,float,high,counterscreen for the alphalisa assay
-
