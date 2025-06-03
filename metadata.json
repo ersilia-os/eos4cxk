@@ -3,21 +3,18 @@
     "Slug": "image-mol-sars-cov2",
     "Status": "Ready",
     "Title": "SARS-CoV-2 Anti viral screening",
-    "Description": "ImageMol is a Representation Learning Framework that utilizes molecule images for encoding molecular inputs as machine readable vectors for downstream tasks such as bio-activity prediction, drug metabolism analysis, or drug toxicity prediction. The approach utilizes transfer learning, that is, pre-training the model on massive unlabeled datasets to help it in generalizing feature extraction and then fine tuning on specific tasks. This model is fine tuned on 13 assays concerned with a number of target categories ranging from viral entry to toxicity in humans. These interactions are formulated as binary classification tasks\n",
+    "Description": "ImageMol is a Representation Learning Framework that utilizes molecule images for encoding molecular inputs as machine readable vectors for downstream tasks such as bio-activity prediction, drug metabolism analysis, or drug toxicity prediction. The approach utilizes transfer learning, that is, pre-training the model on massive unlabeled datasets to help it in generalizing feature extraction and then fine tuning on specific tasks. This model is fine tuned on 13 assays concerned with a number of target categories ranging from viral entry to toxicity in humans. These interactions are formulated as binary classification tasks",
+    "Deployment": [
+        "Local"
+    ],
     "Source": "Local",
     "Source Type": "External",
+    "Task": "Annotation",
+    "Subtask": "Activity prediction",
     "Input": [
         "Compound"
     ],
     "Input Dimension": 1,
-    "Task": "Annotation",
-    "Subtask": "Activity prediction",
-    "Biomedical Area": [
-        "COVID-19"
-    ],
-    "Target Organism": [
-        "SARS-CoV-2"
-    ],
     "Output": [
         "Boolean"
     ],
@@ -29,19 +26,22 @@
         "Antiviral activity",
         "COVID19"
     ],
-    "Publication": "https://www.nature.com/articles/s42256-022-00557-6",
+    "Biomedical Area": [
+        "COVID-19"
+    ],
+    "Target Organism": [
+        "SARS-CoV-2"
+    ],
     "Publication Type": "Peer reviewed",
     "Publication Year": 2022,
+    "Publication": "https://www.nature.com/articles/s42256-022-00557-6",
     "Source Code": "https://github.com/HongxinXiang/ImageMol",
     "License": "MIT",
     "Contributor": "DhanshreeA",
     "Incorporation Date": "2023-01-25",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4cxk.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos4cxk",
     "Docker Architecture": [
         "AMD64"
-    ],
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4cxk.zip",
-    "Deployment": [
-        "Local"
     ]
 }
