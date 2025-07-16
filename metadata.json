@@ -16,7 +16,7 @@
     ],
     "Input Dimension": 1,
     "Output": [
-        "Boolean"
+        "Score"
     ],
     "Output Dimension": 13,
     "Output Consistency": "Fixed",
