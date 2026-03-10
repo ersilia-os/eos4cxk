@@ -39,20 +39,17 @@
     "License": "MIT",
     "Contributor": "DhanshreeA",
     "Incorporation Date": "2023-01-25",
-    "Last Packaging Date": "2025-10-16",
+    "Last Packaging Date": "2026-03-10",
     "Release": "v1.0.0",
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4cxk.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos4cxk",
-    "Docker Architecture": [
-        "AMD64",
-        "ARM64"
-    ],
+    "Docker Architecture": "AMD64",
     "Model Size": 556.0,
     "Environment Size": 8386.0,
-    "Image Size": 10011.82,
-    "Computational Performance 1": 33.01,
-    "Computational Performance 2": 24.42,
-    "Computational Performance 3": 57.55,
-    "Computational Performance 4": 423.22,
+    "Image Size": 10014.36,
+    "Computational Performance 1": 31.93,
+    "Computational Performance 2": 24.75,
+    "Computational Performance 3": 58.14,
+    "Computational Performance 4": 421.92,
     "Computational Performance 5": -1.0
 }
