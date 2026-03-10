@@ -4,6 +4,7 @@ import csv
 import glob
 import sys
 
+import tempfile
 import torch
 import torchvision
 
@@ -42,9 +43,10 @@ def get_predictions(smiles):
     outputs = []
 
     img_processor = ImageData()
+    tmp_dir = tempfile.mkdtemp()
     for idx, smi in enumerate(smiles):
         per_row_preds = []
-        path = f"{os.getcwd()}/{idx}.png"
+        path = f"{tmp_dir}/{idx}.png"
         smiles_to_image(smi, savePath=path)
         img_tensor = img_processor.get_image(path).to(DEVICE)
         for assay in sarscov2_assays:
@@ -56,6 +58,7 @@ def get_predictions(smiles):
             per_row_preds.append(pred)
         outputs.append(per_row_preds)
         os.remove(path)
+    os.rmdir(tmp_dir)
     return outputs
 
 # read SMILES from .csv file, assuming one column with header
