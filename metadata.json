@@ -22,9 +22,7 @@
     "Output Consistency": "Fixed",
     "Interpretation": "Probability of the molecule being active in each assay",
     "Tag": [
-        "Sars-CoV-2",
-        "Antiviral activity",
-        "COVID19"
+        "Antiviral activity"
     ],
     "Biomedical Area": [
         "COVID-19"
