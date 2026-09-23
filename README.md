@@ -14,7 +14,7 @@ This model was incorporated on 2023-01-25.Last packaged on 2026-03-10.
 - **Subtask:** `Activity prediction`
 - **Biomedical Area:** `COVID-19`
 - **Target Organism:** `SARS-CoV-2`
-- **Tags:** `Sars-CoV-2`, `Antiviral activity`, `COVID19`
+- **Tags:** `Antiviral activity`
 
 ### Input
 - **Input:** `Compound`
