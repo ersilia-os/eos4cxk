@@ -1,6 +1,6 @@
 # SARS-CoV-2 Anti viral screening
 
-ImageMol is a Representation Learning Framework that utilizes molecule images for encoding molecular inputs as machine readable vectors for downstream tasks such as bio-activity prediction, drug metabolism analysis, or drug toxicity prediction. The approach utilizes transfer learning, pre-training the model on massive unlabeled datasets to help it in generalizing feature extraction and then fine tuning on specific tasks. This model is fine tuned on 13 assays with target categories ranging from viral entry to toxicity in humans. These interactions are formulated as binary classification tasks
+Profiles a candidate across thirteen SARS-CoV-2 assays run by the National Center for Advancing Translational Sciences, reaching from viral entry and protease inhibition through to counter-screens for human cytotoxicity. Each readout is treated as its own binary classification. The predictions come from ImageMol, which learns molecular representations from rendered images of structures rather than graphs, pretrained on 10 million unlabelled bioactive molecules. Applying it to this panel produced candidate 3C-like protease inhibitors for follow-up.
 
 This model was incorporated on 2023-01-25.Last packaged on 2026-09-23.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2023-01-25.Last packaged on 2026-09-23.
 ### Output
 - **Output Dimension:** `13`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of the molecule being active in each assay
+- **Interpretation:** Probability of activity in each of thirteen SARS-CoV-2 assays, including cytotoxicity counter-screens.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
