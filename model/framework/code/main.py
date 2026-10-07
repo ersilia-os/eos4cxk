@@ -53,9 +53,8 @@ def get_predictions(smiles):
             assay_mdl = models[assay]
             assay_mdl.eval()
             with torch.no_grad():
-                prob = torch.sigmoid(assay_mdl(img_tensor))
-                pred = 1 if prob > 0.5 else 0 # Threshold as per original model
-            per_row_preds.append(pred)
+                prob = torch.sigmoid(assay_mdl(img_tensor)).item()
+            per_row_preds.append(prob)
         outputs.append(per_row_preds)
         os.remove(path)
     os.rmdir(tmp_dir)
