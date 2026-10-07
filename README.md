@@ -2,7 +2,7 @@
 
 Profiles a candidate across the thirteen SARS-CoV-2 bioassays released by the National Center for Advancing Translational Sciences, spanning 3CL protease and ACE2 inhibition, spike-ACE2 binding, pseudoparticle and live-virus entry, and the matching human cytotoxicity counter-screens, each handled as its own binary classification. Features come from ImageMol, an encoder pretrained on ten million unlabelled molecules drawn as pictures. Ersilia fine-tuned the thirteen per-assay networks, because the authors released this assay data but not these checkpoints.
 
-This model was incorporated on 2023-01-25.Last packaged on 2026-09-23.
+This model was incorporated on 2023-01-25.Last packaged on 2026-10-07.
 
 ## Information
 ### Identifiers
@@ -50,11 +50,11 @@ _10 of 13 columns are shown_
 ### Resource Consumption
 - **Model Size (Mb):** `556`
 - **Environment Size (Mb):** `1214`
-- **Image Size (Mb):** `2874.86`
+- **Image Size (Mb):** `2874.89`
 
 **Computational Performance (seconds):**
-- 10 inputs: `29.25`
-- 100 inputs: `55.69`
+- 10 inputs: `26.27`
+- 100 inputs: `50.98`
 - 10000 inputs: `-1`
 
 ### References
