@@ -7,6 +7,7 @@ import sys
 import tempfile
 import torch
 import torchvision
+from rdkit import Chem
 
 from image_dataloader import smiles_to_image, ImageData
 
@@ -45,6 +46,10 @@ def get_predictions(smiles):
     img_processor = ImageData()
     tmp_dir = tempfile.mkdtemp()
     for idx, smi in enumerate(smiles):
+        # RDKit draws an unparseable SMILES as a blank image, so skip it and leave the row empty
+        if Chem.MolFromSmiles(smi) is None:
+            outputs.append([None] * len(sarscov2_assays))
+            continue
         per_row_preds = []
         path = f"{tmp_dir}/{idx}.png"
         smiles_to_image(smi, savePath=path)
