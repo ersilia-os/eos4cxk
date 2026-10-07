@@ -1,6 +1,6 @@
 # SARS-CoV-2 Anti viral screening
 
-Profiles a candidate across thirteen SARS-CoV-2 assays run by the National Center for Advancing Translational Sciences, reaching from viral entry and protease inhibition through to counter-screens for human cytotoxicity. Each readout is treated as its own binary classification. The predictions come from ImageMol, which learns molecular representations from rendered images of structures rather than graphs, pretrained on 10 million unlabelled bioactive molecules. Applying it to this panel produced candidate 3C-like protease inhibitors for follow-up.
+Profiles a candidate across the thirteen SARS-CoV-2 bioassays released by the National Center for Advancing Translational Sciences, spanning 3CL protease and ACE2 inhibition, spike-ACE2 binding, pseudoparticle and live-virus entry, and the matching human cytotoxicity counter-screens, each handled as its own binary classification. Features come from ImageMol, an encoder pretrained on ten million unlabelled molecules drawn as pictures. Ersilia fine-tuned the thirteen per-assay networks, because the authors released this assay data but not these checkpoints.
 
 This model was incorporated on 2023-01-25.Last packaged on 2026-09-23.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2023-01-25.Last packaged on 2026-09-23.
 ### Output
 - **Output Dimension:** `13`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of activity in each of thirteen SARS-CoV-2 assays, including cytotoxicity counter-screens.
+- **Interpretation:** Probability of activity in each of thirteen SARS-CoV-2 assays and their human cytotoxicity counter-screens.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
