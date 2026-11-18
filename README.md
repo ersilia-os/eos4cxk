@@ -2,7 +2,8 @@
 
 Profiles a candidate across the thirteen SARS-CoV-2 bioassays released by the National Center for Advancing Translational Sciences, spanning 3CL protease and ACE2 inhibition, spike-ACE2 binding, pseudoparticle and live-virus entry, and the matching human cytotoxicity counter-screens, each handled as its own binary classification. Features come from ImageMol, an encoder pretrained on ten million unlabelled molecules drawn as pictures. Ersilia fine-tuned the thirteen per-assay networks, because the authors released this assay data but not these checkpoints.
 
-This model was incorporated on 2023-01-25.Last packaged on 2026-10-07.
+This model was incorporated on 2023-01-25.
+Last packaged on 2026-10-07.
 
 ## Information
 ### Identifiers
@@ -46,6 +47,7 @@ _10 of 13 columns are shown_
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos4cxk](https://hub.docker.com/r/ersiliaos/eos4cxk)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4cxk.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4cxk.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos4cxk_v2.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos4cxk_v2.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `556`
